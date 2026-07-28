@@ -1,32 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica Odontológica</title>
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    ul { list-style: none; padding-left: 5px; 
+}
+        a { color:blue; text-decoration: none;
+}
+    .bar {
+        background-color: #f9f9fb;
+        padding:15px;
+        border-top: solid 1px #cdcdcd;
+        border-bottom: solid 1px #cdcdcd;
+}
+    .content {
+        max-width: 1440px;
+        margin: auto;
+        grid-gap: 3rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "sidebar main anchors";
+        grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+}
+    .footer {
+        min-height: 100px;
+        border-top: solid 1px #cdcdcd;
+}
+    .anchors {
+        border-left: solid 1px #cdcdcd;
+        padding-left: 15px;
+}
+    .sidebar {
+        border-right: solid 1px #cdcdcd;
+}
+    figure {
+        text-align: center;
+}
+    </style>
 </head>
 <body>
 
-     <header>     
-            <img src="Odontologia.jpg" alt="Imagem de uma clínica odontológica" width="770">
+    <header>   
+        <figure class="logo">
+            <img src="/Cobra Kai.jpg" alt="Cobra Kai" width="200"/>
+        </figure>
+        <figcaption>Imagem da Capa do Cobra Kai</figcaption>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="/index.html">Voltar para a página inicial</a></li>
-            <li><a href="/sobre.html">Sobre a Clínica</a></li>
-            <li><a href="/contato.html">Sobre o Contato</a></li>
-            <li><a href="/horario.html">Sobre o Horário</a></li>
-        </ul>
-    </nav>
+    <div class="bar"></div>
 
-    <main>
-        <h2>O que é uma clínica odontológica?</h2>
-            <p>Uma clínica odontológica é um estabelecimento de saúde especializado na prevenção, diagnóstico e tratamento de problemas relacionados aos dentes, gengivas e à saúde bucal. Seu objetivo é promover o bem-estar e a qualidade de vida dos pacientes por meio de atendimentos odontológicos.</p>
-    </main>
-   
-    <footer>
-        <p>© 2023 Clínica Odontológica. Todos os direitos reservados.</p>
-    </footer>>
+    <div class="content">
+        <div class="sidebar">
+            <h2>Título</h2>
+            <ul>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </div>
+
+                 
+        <main class="main">
+
+        <section>
+            <h1 id="cobra-kai">Cobra Kai</h1>
+                <p>Cobra Kai foi uma websérie americana de drama e ação de artes marciais, baseada na trilogia Karate Kid, sucesso da década de 1980 criada por Robert Mark Kamen, que estreou em 2 de maio de 2018 no YouTube Premium, onde a história acontece com a reabertura do dojo de karatê Cobra Kai, por Johnny Lawrence e a reativação da antiga rivalidade com Daniel LaRusso</p>
+        </section>
+
+        <section>
+            <h2 id="enredo">Enredo</h2>
+                <p>Cobra Kai é uma série de comédia dramática e artes marciais que dá continuidade aos filmes originais de Karatê Kid, retomando a história cerca de 34 anos após os eventos do filme de 1984. A trama gira em torno de Johnny Lawrence, que, vivendo uma fase difícil, decide reabrir o antigo dojo Cobra Kai e retomar sua rivalidade com Daniel LaRusso, agora um empresário bem-sucedido que segue sem o apoio de seu mentor, o falecido Sr. Miyagi. Paralelamente ao confronto entre os dois, a série acompanha os alunos de ambos os dojos, mostrando como as diferentes filosofias de ensino moldam a vida dessa nova geração de estudantes de karatê.</p>
+        </section>
+
+        
+        <section>           
+                <h2 id="elenco" >Elenco</h2>
+            <table border="4" cellpadding="5" cellspacing="1">
+                <tr>
+                    <th>Ator</th>
+                    <th>Personagem</th>
+                </tr>
+                <tr>
+                    <td>Ralph Macchio</td>
+                    <td>Daniel LaRusso</td>
+                </tr>
+                <tr>
+                    <td>William Zabka</td>
+                    <td>Johnny Lawrence</td>
+                </tr>
+                <tr>
+                    <td>Xolo Maridueña</td>
+                    <td>Miguel Diaz</td>
+                </tr>
+                <tr>
+                    <td>Tanner Buchanan</td>
+                    <td>Robby Keene</td>
+                </tr>
+                <tr>
+                    <td>Mary Mouser</td>
+                    <td>Samantha LaRusso</td>
+                </tr>
+                <tr>
+                    <td>Jacob Bertrand</td>
+                    <td>Hawk</td>
+                </tr>
+                <tr>
+                    <td>Peyton List</td>
+                    <td>Tory Nichols</td>
+                </tr>
+            </table>
+        </section> 
+
+        <section>
+            <h2 id="protagonistas-principais">Protagonistas Principais</h2>
+            <ul>
+                <li>    
+                    <h3>Johnny Lawrence</h3>
+                    <p>Johnny era o antagonista clássico dos filmes originais de Karatê Kid, rico, popular e treinado pelo sensei John Kreese na filosofia agressiva do Cobra Kai. Trinta e três anos depois de perder o torneio All Valley de 1984 para Daniel LaRusso, ele vive uma fase de decadência: alcoolismo, depressão e pobreza, morando sozinho em um apartamento simples. É pai de Robby, mas os dois vivem afastados por causa da negligência de Johnny como pai. Buscando reconstruir sua vida, ele decide reabrir o dojo Cobra Kai e se torna sensei de uma nova geração de alunos, iniciando sua jornada de redenção ao longo da série.</p>
+                </li>
+                <li>
+                    <h3>Miguel Diaz</h3>
+                    <p>Miguel nasceu no Equador, filho de Carmen Diaz e Hector Salazar. Sua família precisou fugir do país por causa dos envolvimentos criminosos do pai, se estabelecendo nos Estados Unidos. Miguel cresce como um adolescente tímido e vítima de bullying, até se tornar vizinho de Johnny Lawrence, que o ajuda a se defender e acaba se tornando seu sensei. Ele é o primeiro aluno do Cobra Kai reaberto e, com o tempo, desenvolve uma relação quase de pai e filho com Johnny. Ao longo da série, Miguel evolui como lutador e enfrenta uma rivalidade importante com Robby Keene, o filho biológico de seu próprio mentor.</p>
+                </li>
+                <li>
+                    <h3>Daniel LaRusso</h3>
+                    <p>Daniel é o protagonista original da franquia Karatê Kid, que venceu Johnny no torneio de 1984 sob a orientação do Sr. Miyagi. Décadas depois, ele se tornou um empresário bem-sucedido, dono de uma rede de concessionárias de carros, casado com Amanda e pai de Sam e Anthony. Apesar do sucesso, enfrenta dificuldades emocionais por seguir sem o apoio de seu mentor, já falecido. Quando descobre que Johnny reabriu o Cobra Kai, Daniel decide retomar o karatê também, reabrindo o Miyagi-Do para reacender os ensinamentos de seu antigo sensei o que faz sua rivalidade histórica com Johnny voltar à tona.</p>
+                </li>
+                <li>
+                    <h3>Robby Keene</h3>
+                    <p>Robby é filho de Johnny Lawrence e Shannon Keene, mas cresceu praticamente sem a presença do pai. Inicialmente é descrito como um jovem rebelde e encrenqueiro. Sua vida muda quando conhece Daniel LaRusso, que passa a treiná-lo e o transforma no primeiro aluno de uma nova geração do Miyagi-Do. Sob a orientação de Daniel, Robby aprende disciplina e passa a controlar melhor sua raiva. Ele desenvolve uma rivalidade com Miguel, em parte pela disputa antiga entre seus mentores, em parte por questões pessoais, e sua trajetória ao longo da série é marcada por conflitos entre os diferentes dojos e figuras paternas em sua vida.</p>
+                </li>
+            </ul>
+        </section>
+        </main>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#">Âncoras</a></li>
+                <li><a href="#">Enredo</a></li>
+                <li><a href="#">Elenco</a></li>
+                <li><a href="#">Protagonistas Principais</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Karatê Kid. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
